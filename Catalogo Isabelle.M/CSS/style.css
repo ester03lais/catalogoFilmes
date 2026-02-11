@@ -1,5 +1,5 @@
 :root {  
-   --verde:#1db954; 
+   --rosa:#b91d82; 
    --cinza-dark: #121212;
    --cinza-light: #1e1e1e; 
    --branco: #ffffff;
@@ -21,9 +21,9 @@ body {
     margin: 0 auto; 
     padding: 1rem;
 } 
-.hearder {
+.header {
     background-color: var(--cinza-light);
-    border-bottom: 2px solid var(--verde);
+    border-bottom: 2px solid var(--rosa);
 }
 .header-conteudo {
     display: flex;
@@ -32,7 +32,7 @@ body {
     flex-wrap: wrap;
 }
 .logo span{
-    color: var(--verde);
+    color: var(--rosa);
 }
 .menu{
     display: flex;
@@ -44,7 +44,7 @@ body {
     transition: 0.3s;
 }
 .menu a:hover{
-    color: var(--verde);
+    color: var(--rosa);
 }
 .pesquisa-section{
     margin: 2rem 0;
@@ -63,7 +63,7 @@ body {
     font-size: 1rem;
 }
 .pesquisa-button {
-    background-color: var(--verde);
+    background-color: var(--rosa);
     border: none;
     width: 45px;
     height: 45px;
@@ -82,6 +82,6 @@ body {
     background-color: var(--cinza-light);
     text-align: center;
     padding: 1rem;
-    border-top: 2px solid var(--verde);
+    border-top: 2px solid var(--rosa);
     font-size: 0.8rem;
 }

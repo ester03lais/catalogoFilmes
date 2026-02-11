@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo de Filmes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <script src="JS/main.js" defer></script>
 </head>
 <body>
     <header class = "header" >
         <div class ="container header-conteudo">
-            <h1 class="logo"><span>Lista de Filme</span></h1> 
+            <h1 class="logo"><span>Lista de Filmes</span></h1> 
             <nav class="menu"> 
                 <a href="#">Inicio</a> 
                 <a href="#">Filmes</a> 
@@ -18,14 +19,17 @@
         </div>
     </header>
     <main>
-        <selection class="pesquisa-selection">
+        <section class="pesquisa-selection">
             <div class="container pesquisa-conteudo">
-                <input type="text" placeholder="Pesquisa por filme">
-                <button class="pesquisa-button">
+                <input type="text" id="campoPesquisa" placeholder="Pesquisa por filme">
+                <button class="pesquisa-button" id="botaoPesquisa">
                     <img src="ASSETS/ICONE/loupe.png" alt="Pesquisar">
                 </button>
             </div>
-        </selection>
+        </section>
+        <section class="exibeFilme-section">
+            <div id="filmesGrid"></div>
+        </section>
     </main>
     <footer class="footer">
         <p> Desenvolvido por Isabelle, Ester e Artur!!! &copy; 2026</p>
