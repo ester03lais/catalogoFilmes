@@ -113,8 +113,9 @@ body {
 
 .card {
     background-color: var(--cinza-light); 
-    width: 350px; 
-    border-radius: 12px;
+    width: 200px;   
+    height: 300px;
+    border-radius: 10%;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -128,7 +129,7 @@ body {
 }
 
 .card-img {
-    width: 100%;
+    width: 200px; 
     border-radius: 8px;
     margin-bottom: 0.8rem; 
 }

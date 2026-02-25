@@ -75,7 +75,10 @@ function renderizarMidia(filmes) {
                 <p><strong>Lançamento:</strong> ${filme.release_date}</p>
                 <p>${filme.overview}</p>
                 `;
-            }
+            } 
+            card.addEventListener("click", () => { 
+                window.location.href = `pages/detalhe.html?id${filme.id}&type=${filme.media_type}`;
+            });
 
         filmesGrid.appendChild(card);
     });
