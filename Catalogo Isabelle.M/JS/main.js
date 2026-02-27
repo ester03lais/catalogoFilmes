@@ -9,18 +9,25 @@ const inicio = document.getElementById("inicio");
 const filmes = document.getElementById("filmes");
 const series = document.getElementById("series");
 
-
 async function requisicaoURL(url) {
-    try {
+    try { 
+        filmesGrid.classList.add("fade-out")
         const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error("Erro na requisição");
         }
 
-        const data = await response.json();
-        renderizarMidia(data.results);
-
+        const data = await response.json(); 
+        setTimeout(() => { 
+            renderizarMidia(data.results); 
+            filmesGrid.classList.remove("fade-out"); 
+            filmesGrid.classList.add("fade-in"); 
+            setTimeout(() => { 
+                filmesGrid.classList.remove("fade-in"); 
+            }, 300)
+        }, 200);
+        
     } catch (error) {
         console.error("Erro:", error);
         filmesGrid.innerHTML = "<p>Erro ao carregar filmes.</p>";
@@ -60,7 +67,7 @@ function renderizarMidia(filmes) {
 
             if(filme.title) {
                 card.innerHTML = `
-                <img src="${imagem}" alt="${filme.title}">
+                <img class="card-img" src="${imagem}" alt="${filme.title}">
                 <h3>${filme.title}</h3>
                 <p><strong>Nota:</strong> ${filme.vote_average}</p>
                 <p><strong>Lançamento:</strong> ${filme.release_date}</p>
@@ -69,7 +76,7 @@ function renderizarMidia(filmes) {
                 
             }else{
                 card.innerHTML = `
-                <img src="${imagem}" alt="${filme.name}">
+                <img class="card-img" src="${imagem}" alt="${filme.title}">
                 <h3>${filme.name}</h3>
                 <p><strong>Nota:</strong> ${filme.vote_average}</p>
                 <p><strong>Lançamento:</strong> ${filme.release_date}</p>
@@ -77,7 +84,7 @@ function renderizarMidia(filmes) {
                 `;
             } 
             card.addEventListener("click", () => { 
-                window.location.href = `pages/detalhe.html?id${filme.id}&type=${filme.media_type}`;
+                window.location.href = `pages/detalhe.html?id=${filme.id}&type=${filme.media_type}`;
             });
 
         filmesGrid.appendChild(card);
@@ -108,7 +115,18 @@ campoPesquisa.addEventListener("keydown", function (event) {
         pesquisaGeral(); 
     }    
 });
-document.addEventListener("DOMContentLoaded", carregarTendenciasGeral); 
+document.addEventListener("DOMContentLoaded", carregarTendenciaGeral); 
 inicio.addEventListener("click", carregarTendenciaGeral); 
 filmes.addEventListener("click", buscaFilme); 
 series.addEventListener("click", buscaSerie);
+
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.transition = "opacity 0.5s ease";
+        loader.style.opacity = "0";
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 500);
+    }
+});

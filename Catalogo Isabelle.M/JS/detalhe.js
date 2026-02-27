@@ -25,7 +25,7 @@ async function carregarDetalhes(){
     }   
 }
     function renderizarDetalhes(item) {
-        const imagem = item.poster_path ? IMGAE_URL + item.poster_path : "";
+        const imagem = item.poster_path ? IMAGE_URL + item.poster_path : "";
         const titulo = item.title || item.name;
         const dataLancamento = item.release_date || item.first_air_date;
         document.title = titulo; 
@@ -43,3 +43,16 @@ async function carregarDetalhes(){
      </div>
     `;
 }
+document.addEventListener("DOMContentLoaded", carregarDetalhes)
+
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.transition = "opacity 0.5s ease";
+        loader.style.opacity = "0";
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 500);
+    }
+});
+
