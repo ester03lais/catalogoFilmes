@@ -46,6 +46,8 @@ body {
 .menu{
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu a{
@@ -189,4 +191,29 @@ body {
 .fade-in{ 
     opacity: 1; 
     transform: translateY(0);
+} 
+ 
+body.tema-claro { 
+    --cinza-dark: #ffffff; 
+    --cinza-light: #dbd6d6; 
+    --rosa:var(--rosa);
+}
+
+
+.botaoTema {
+    background-color: var(--rosa);
+    border: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.botaoTema img{
+    width: 30px;
+    height: 30px;
 }

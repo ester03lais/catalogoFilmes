@@ -129,4 +129,17 @@ window.addEventListener("load", function() {
             loader.style.display = "none";
         }, 500);
     }
-});
+}); 
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const tipo = params.get("tipo");
+    if (tipo === "filme") {
+        buscaFilme();
+    }else if (tipo === "serie") {
+        buscaSerie();
+    }else {
+        carregarTendenciasGeral();
+    }
+})
+ 
+
