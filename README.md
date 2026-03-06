@@ -1,4 +1,4 @@
-# 🍿 Sabor Pipoca — Catálogo de Filmes
+# 🍿 Sabor Pipoca — Catálogo de Filmes e Séries
 
 Projeto de catálogo de **filmes e séries** desenvolvido com **HTML, CSS e JavaScript**, consumindo dados da API do **TMDB (The Movie Database)**.
 
