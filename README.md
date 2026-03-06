@@ -41,8 +41,8 @@ https://developer.themoviedb.org/
 
 ## 📂 Estrutura do projeto
 
-**catalogo/
-│
+**catalogo/**
+**│**
 ├── assets/
 │ ├── icone/
 │ └── imagem/
