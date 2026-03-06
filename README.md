@@ -1,43 +1,42 @@
-🍿 Sabor Pipoca — Catálogo de Filmes
+# 🍿 Sabor Pipoca — Catálogo de Filmes
 
-Projeto de catálogo de filmes e séries desenvolvido utilizando HTML, CSS e JavaScript, consumindo dados da API do TMDB (The Movie Database).
+Projeto de catálogo de **filmes e séries** desenvolvido com **HTML, CSS e JavaScript**, consumindo dados da API do **TMDB (The Movie Database)**.
 
-O sistema permite visualizar títulos populares, pesquisar filmes ou séries, filtrar por gênero e acessar uma página de detalhes com informações completas.
+O sistema permite visualizar títulos populares, pesquisar filmes ou séries, filtrar por gênero e acessar uma página de detalhes com informações como data de lançamento, nota e descrição.
 
-🚀 Funcionalidades
+---
 
-🔎 Pesquisa de filmes e séries
+## 🚀 Funcionalidades
 
-🎬 Exibição de títulos populares
+- 🔎 Pesquisa de filmes e séries  
+- 🎬 Exibição de títulos populares  
+- 🎭 Filtro por gênero  
+- 📄 Página de detalhes com informações completas  
+- ⭐ Exibição de nota, data e descrição  
+- 🌗 Alternância entre modo claro e escuro  
+- 🎨 Interface estilizada com CSS
 
-🎭 Filtro por gênero
+---
 
-📄 Página de detalhes do filme ou série
+## 🖥️ Tecnologias utilizadas
 
-⭐ Exibição de nota, data e descrição
+- HTML5  
+- CSS3  
+- JavaScript  
+- API do TMDB
 
-🌗 Modo claro / escuro
+---
 
-📱 Layout responsivo
-
-🎨 Interface estilizada com CSS
-
-🖥️ Tecnologias utilizadas
-
-HTML5
-
-CSS3
-
-JavaScript
-
-API do TMDB
-
-🔗 API utilizada
+## 🔗 API utilizada
 
 Este projeto utiliza dados da API:
 
-The Movie Database (TMDB)
+**The Movie Database (TMDB)**  
 https://www.themoviedb.org/
 
-Documentação da API:
+Documentação da API:  
 https://developer.themoviedb.org/
+
+---
+
+## 📂 Estrutura do projeto
