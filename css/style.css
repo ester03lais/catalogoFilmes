@@ -303,7 +303,7 @@ body.tema-claro {
 }
 
 select.filtroGenero{
-    background-image: url("../ASSETS/ICONE/filter.png");
+    background-image: url("../assets/icone/filter.png");
     background-color: var(--rosa);
     background-size: 24px;
     background-repeat: no-repeat;
@@ -325,4 +325,5 @@ select.filtroGenero{
 
 select.filtroGenero:hover{
     transform: scale(1.05);
+
 }
