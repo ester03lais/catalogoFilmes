@@ -83,14 +83,9 @@ function renderizarMidia(filmes) {
                 <p>${filme.overview}</p>
                 `;
             } 
-            // ATENÇÃO AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
             card.addEventListener("click", () => { 
-                // VERIFICAR COM A PROFESSORA, POIS CONSERTOU MAS FOI COM BASE NO GPF
-                // window.location.href = `pages/detalhe.html?id=${filme.id}&type=${filme.media_type}`;
-                // ESSE CODIGO ACIMA É O QUE JA ESTAVA NO CODIGO E ESTAVA GERANDO ERRO
                 window.location.href = `pages/detalhe.html?id=${filme.id}&type=${filme.title ? "movie" : "tv"}`;
-                // ESSE CODIGO ACIMA PRECISA VERIFICAR COM A PROFESSORA, POIS FOI O GPT QUE REPORTOU QUE FALTAVA INFORMAÇÃO. PRIMEIRO REPORTAR O ERRO E VER SE É SO NO NOSSO, SE TEM RESOLUÇÃO
             });
 
 
@@ -197,3 +192,4 @@ document.addEventListener("DOMContentLoaded", () => {
     carregarAnos();
 
 });
+
