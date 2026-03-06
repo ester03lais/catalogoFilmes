@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">  
+    <script src="JS/main.js" defer></script>
+    <script src="JS/global.js" defer></script>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Aguarde, carregando informações...</p>
+    </div>
+    <header class = "header" >
+        <div class ="container header-conteudo">
+            <h1 class="logo"><span>Sabor Pipoca 🤏🍿</span></h1> 
+            <nav class="menu"> 
+                <a href="./index.html?tipo=filme" id="inicio">Inicio</a> 
+                <a href="./index.html?tipo=filme" id="filmes">Filmes</a> 
+                <a href="./index.html?tipo=serie" id="series">Series</a> 
+                <button class="botaoTema" id="botaoTema">
+                    <img src="ASSETS/ICONE/night-mode.png" alt="">
+                </button>
+                <select class="filtroGenero" id="filtroGenero"></select>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="pesquisa-selection">
+            <div class="container pesquisa-conteudo">
+                <input type="text" id="campoPesquisa" placeholder="Pesquise por filme ou série">
+                <button class="pesquisa-button" id="botaoPesquisa">
+                    <img src="ASSETS/ICONE/loupe.png" alt="Pesquisar">
+                </button>
+            </div>
+        </section>
+        <section class="exibeFilme-section">
+            <div id="filmesGrid" class="filmes-series"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p> Desenvolvido por Artur, Ester, Isabelle e Paulo!!! &copy; 2026</p>
+    </footer>
+</body>
+</html>
