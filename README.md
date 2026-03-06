@@ -39,23 +39,25 @@ https://developer.themoviedb.org/
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
-``catalogo/
+```
+catalogo/
 │
 ├── assets/
-│ ├── icone/
-│ └── imagem/
+│   ├── icone/
+│   └── imagem/
 │
 ├── css/
-│ └── style.css
+│   └── style.css
 │
 ├── js/
-│ ├── main.js
-│ ├── global.js
-│ └── detalhe.js
+│   ├── main.js
+│   ├── global.js
+│   └── detalhe.js
 │
 ├── pages/
-│ └── detalhe.html
+│   └── detalhe.html
 │
-└── index.html``
+└── index.html
+```
