@@ -3,13 +3,13 @@ document.addEventListener ("DOMContentLoaded", function () {
     const filmes = document.getElementById("filmes");
     const series = document.getElementById("series");
     inicio.addEventListener("click", function (e) {
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
     });
     filmes.addEventListener("click", function (e) {
-        window.location.href = "/index.html?tipo=filme";    
+        window.location.href = "./index.html?tipo=filme";    
     });
     series.addEventListener("click", function (e) {
-        window.location.href = "/index.html?tipo=serie";    
+        window.location.href = "./index.html?tipo=serie";    
     });
     const temaSalvo = localStorage.getItem("tema");
     if (temaSalvo === "claro") {
@@ -25,4 +25,5 @@ document.addEventListener ("DOMContentLoaded", function () {
             localStorage.setItem("tema", temaAtual);
     });
 });
+
 
