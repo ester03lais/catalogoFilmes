@@ -4,19 +4,25 @@ document.addEventListener ("DOMContentLoaded", function () {
     const series = document.getElementById("series");
     inicio.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "../index.html";
+        window.location.href = window.location.pathname.includes("/pages/")
+            ? "../index.html"
+            : "./index.html";
     });
 
     filmes.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "../index.html?tipo=filme";    
+        window.location.href = window.location.pathname.includes("/pages/")
+            ? "../index.html?tipo=filme"
+            : "./index.html?tipo=filme";
     });
 
     series.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "../index.html?tipo=serie";    
+        window.location.href = window.location.pathname.includes("/pages/")
+            ? "../index.html?tipo=serie"
+            : "./index.html?tipo=serie";
     });
-
+    
     const params = new URLSearchParams(window.location.search);
     const tipo = params.get("tipo");
     const type = params.get("type");
