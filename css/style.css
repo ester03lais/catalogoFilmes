@@ -315,3 +315,9 @@ select.filtroGenero{
 select.filtroGenero:hover{
     transform: scale(1.05);
 }
+
+.menu a.ativo{
+    color: var(--rosa);
+    border-bottom: 2px solid var(--rosa);
+    padding-bottom: 4px;
+}
