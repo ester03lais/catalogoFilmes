@@ -4,17 +4,17 @@ document.addEventListener ("DOMContentLoaded", function () {
     const series = document.getElementById("series");
     inicio.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "/catalogoFilmes/index.html";
+        window.location.href = "../index.html";
     });
-    
+
     filmes.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "/catalogoFilmes/index.html?tipo=filme";
+        window.location.href = "../index.html?tipo=filme";    
     });
-    
+
     series.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "/catalogoFilmes/index.html?tipo=serie";
+        window.location.href = "../index.html?tipo=serie";    
     });
 
     const params = new URLSearchParams(window.location.search);
