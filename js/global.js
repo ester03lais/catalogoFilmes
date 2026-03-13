@@ -3,14 +3,36 @@ document.addEventListener ("DOMContentLoaded", function () {
     const filmes = document.getElementById("filmes");
     const series = document.getElementById("series");
     inicio.addEventListener("click", function (e) {
-        window.location.href = "./index.html";
+        e.preventDefault();
+        window.location.href = "../index.html";
     });
+
     filmes.addEventListener("click", function (e) {
-        window.location.href = "./index.html?tipo=filme";    
+        e.preventDefault();
+        window.location.href = "../index.html?tipo=filme";    
     });
+
     series.addEventListener("click", function (e) {
-        window.location.href = "./index.html?tipo=serie";    
+        e.preventDefault();
+        window.location.href = "../index.html?tipo=serie";    
     });
+
+    const params = new URLSearchParams(window.location.search);
+    const tipo = params.get("tipo");
+    const type = params.get("type");
+
+    inicio.classList.remove("ativo");
+    filmes.classList.remove("ativo");
+    series.classList.remove("ativo");
+
+    if (tipo === "filme" || type === "movie") {
+        filmes.classList.add("ativo");
+    } else if (tipo === "serie" || type === "tv") {
+        series.classList.add("ativo");
+    } else {
+        inicio.classList.add("ativo");
+    }
+
     const temaSalvo = localStorage.getItem("tema");
     if (temaSalvo === "claro") {
         document.body.classList.add("tema-claro");
