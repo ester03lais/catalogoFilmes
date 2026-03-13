@@ -17,7 +17,15 @@
     <header class = "header" >
         <div class ="container header-conteudo">
             <h1 class="logo"><span>Sabor Pipoca 🤏🍿</span></h1> 
-            <nav class="menu"> 
+            <nav class="menu">
+                <section class="pesquisa-selection">
+                    <div class="container pesquisa-conteudo">
+                        <input type="text" id="campoPesquisa" class="campoPesquisa" placeholder="Pesquise por filme ou série">
+                        <button class="pesquisa-button" id="botaoPesquisa">
+                            <img src="assets/icone/loupe.png" alt="Pesquisar">
+                        </button>
+                    </div>
+                </section> 
                 <a href="./index.html?tipo=filme" id="inicio">Inicio</a> 
                 <a href="./index.html?tipo=filme" id="filmes">Filmes</a> 
                 <a href="./index.html?tipo=serie" id="series">Series</a> 
@@ -29,14 +37,14 @@
         </div>
     </header>
     <main>
-        <section class="pesquisa-selection">
+        <!-- <section class="pesquisa-selection">
             <div class="container pesquisa-conteudo">
                 <input type="text" id="campoPesquisa" placeholder="Pesquise por filme ou série">
                 <button class="pesquisa-button" id="botaoPesquisa">
                     <img src="assets/icone/loupe.png" alt="Pesquisar">
                 </button>
             </div>
-        </section>
+        </section> -->
         <section class="exibeFilme-section">
             <div id="filmesGrid" class="filmes-series"></div>
         </section>
