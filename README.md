@@ -1,3 +1,6 @@
+⚠️ Este projeto utiliza a API do TMDB.
+Para executá-lo localmente, é necessário gerar sua própria chave de API gratuita no site oficial do TMDB.
+
 # 🍿 Sabor Pipoca — Catálogo de Filmes e Séries
 
 Projeto de catálogo de **filmes e séries** desenvolvido com **HTML, CSS e JavaScript**, consumindo dados da API do **TMDB (The Movie Database)**.
@@ -62,7 +65,7 @@ Para executar o projeto corretamente, siga os passos abaixo:
 const API_KEY = "SUA_CHAVE_AQUI";
 ```
 
-7. Substitua "SUA_CHAVE_AQUI" pela sua chave da API do TMDB.
+7. Substitua "COLOQUE_SUA_CHAVE_AQUI" pela sua chave da API do TMDB.
 
 Exemplo:
 
