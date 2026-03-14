@@ -1,4 +1,4 @@
-⚠️ Este projeto utiliza a API do TMDB.
+# ⚠️ Este projeto utiliza a API do TMDB.
 Para executá-lo localmente, é necessário gerar sua própria chave de API gratuita no site oficial do TMDB.
 
 # 🍿 Sabor Pipoca — Catálogo de Filmes e Séries
